@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Comparativo completo de agentes de IA: OpenClaw, ZeroClaw, NanoClaw, NanoBot, PicoClaw, IronClaw, TinyClaw e Agent Zero. Features, arquitetura e comparação lado a lado.">
+  <title>AI Agent Frameworks — Comparativo Completo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Animated background -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow--1"></div>
+    <div class="bg-glow bg-glow--2"></div>
+    <div class="bg-glow bg-glow--3"></div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header__brand">
+        <span class="header__icon">⚡</span>
+        <h1 class="header__title">Claw Framework Comparison</h1>
+      </div>
+      <nav class="tabs" role="tablist">
+        <button class="tab tab--active" data-tab="overview" role="tab" aria-selected="true">Overview</button>
+        <button class="tab" data-tab="concepts" role="tab">Key Concepts</button>
+        <button class="tab tab--highlight" data-tab="features" role="tab">Feature Shopping</button>
+        <button class="tab" data-tab="comparison" role="tab">Comparison Table</button>
+        <button class="tab" data-tab="architecture" role="tab">Architecture</button>
+        <button class="tab" data-tab="verdicts" role="tab">Best-For Verdicts</button>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Overview Tab -->
+      <section class="panel panel--active" id="panel-overview">
+        <div class="hero">
+          <h2 class="hero__title">
+            <span class="hero__gradient">8 AI Agent Frameworks</span>
+            <br>One Comprehensive Comparison
+          </h2>
+          <p class="hero__subtitle">Compare OpenClaw, ZeroClaw, NanoClaw, NanoBot, PicoClaw, IronClaw, TinyClaw and Agent Zero — from architecture to messaging integrations, security models, and everything in between.</p>
+        </div>
+        <div class="agent-grid" id="agent-grid"></div>
+      </section>
+
+      <!-- Key Concepts Tab -->
+      <section class="panel" id="panel-concepts">
+        <h2 class="section-title">Key Concepts</h2>
+        <p class="section-desc">Understanding the core ideas behind the Claw family of AI agent frameworks and Agent Zero.</p>
+        <div class="concepts-grid" id="concepts-grid"></div>
+      </section>
+
+      <!-- Feature Shopping Tab -->
+      <section class="panel" id="panel-features">
+        <h2 class="section-title">Side-by-Side Comparison</h2>
+        <p class="section-desc">Feature matrix across all frameworks. <span class="legend-green">Green</span> = supported, <span class="legend-yellow">yellow</span> = partial, <span class="legend-gray">gray</span> = not available.</p>
+        <div class="table-wrapper">
+          <table class="comparison-table" id="feature-table">
+            <thead id="feature-thead"></thead>
+            <tbody id="feature-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Comparison Table Tab -->
+      <section class="panel" id="panel-comparison">
+        <h2 class="section-title">Detailed Specs</h2>
+        <p class="section-desc">Deep dive into the technical specifications of each framework.</p>
+        <div class="table-wrapper">
+          <table class="comparison-table" id="specs-table">
+            <thead id="specs-thead"></thead>
+            <tbody id="specs-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Architecture Tab -->
+      <section class="panel" id="panel-architecture">
+        <h2 class="section-title">Architecture Overview</h2>
+        <p class="section-desc">How each framework is structured under the hood.</p>
+        <div class="arch-grid" id="arch-grid"></div>
+      </section>
+
+      <!-- Best-For Verdicts Tab -->
+      <section class="panel" id="panel-verdicts">
+        <h2 class="section-title">Best-For Verdicts</h2>
+        <p class="section-desc">Which framework fits your use case best?</p>
+        <div class="verdicts-grid" id="verdicts-grid"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>AI Agent Framework Comparison &copy; 2026 — Data sourced from official documentation and community research.</p>
+    </footer>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
