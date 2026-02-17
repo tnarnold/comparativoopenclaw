@@ -5,6 +5,7 @@ const agents = [
   {
     id: 'openclaw',
     name: 'OpenClaw',
+    repo: 'https://github.com/openclaw/openclaw',
     color: '#fb923c',
     thClass: 'th-openclaw',
     lang: 'TypeScript',
@@ -20,6 +21,7 @@ const agents = [
   {
     id: 'zeroclaw',
     name: 'ZeroClaw',
+    repo: 'https://github.com/theonlyhennygod/zeroclaw',
     color: '#6382ff',
     thClass: 'th-zeroclaw',
     lang: 'Rust',
@@ -35,6 +37,7 @@ const agents = [
   {
     id: 'nanoclaw',
     name: 'NanoClaw',
+    repo: 'https://github.com/gavrielc/nanoclaw',
     color: '#22d3ee',
     thClass: 'th-nanoclaw',
     lang: 'TypeScript',
@@ -50,6 +53,7 @@ const agents = [
   {
     id: 'nanobot',
     name: 'NanoBot',
+    repo: 'https://github.com/nanobot-ai/nanobot',
     color: '#a855f7',
     thClass: 'th-nanobot',
     lang: 'Python',
@@ -65,6 +69,7 @@ const agents = [
   {
     id: 'picoclaw',
     name: 'PicoClaw',
+    repo: 'https://github.com/sipeed/picoclaw',
     color: '#34d399',
     thClass: 'th-picoclaw',
     lang: 'Go',
@@ -80,6 +85,7 @@ const agents = [
   {
     id: 'ironclaw',
     name: 'IronClaw',
+    repo: 'https://github.com/nearai/ironclaw',
     color: '#94a3b8',
     thClass: 'th-ironclaw',
     lang: 'Rust + Python',
@@ -95,6 +101,7 @@ const agents = [
   {
     id: 'tinyclaw',
     name: 'TinyClaw',
+    repo: 'https://github.com/jlia0/tinyclaw',
     color: '#f472b6',
     thClass: 'th-tinyclaw',
     lang: 'TS/Bash',
@@ -110,6 +117,7 @@ const agents = [
   {
     id: 'agentzero',
     name: 'Agent Zero',
+    repo: 'https://github.com/agent0ai/agent-zero',
     color: '#fbbf24',
     thClass: 'th-agentzero',
     lang: 'Python',
@@ -672,7 +680,7 @@ function renderFeatureTable() {
 
   thead.innerHTML = `<tr>
     <th>Feature</th>
-    ${agents.map(a => `<th class="${a.thClass}">${a.name}</th>`).join('')}
+    ${agents.map(a => `<th class="${a.thClass}"><a href="${a.repo}" target="_blank" rel="noopener noreferrer">${a.name}</a></th>`).join('')}
   </tr>`;
 
   tbody.innerHTML = featureMatrix.map(row => {
