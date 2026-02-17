@@ -139,6 +139,73 @@ const featureMatrix = [
     tinyclaw: { text: 'TS/Bash', cls: 'cell-special' },
     agentzero: { text: 'Python', cls: 'cell-special' },
   },
+  {
+    feature: 'Codebase Size',
+    openclaw: { text: 'Large', cls: 'cell-special' },
+    zeroclaw: { text: 'Medium', cls: 'cell-special' },
+    nanoclaw: { text: '~500 LoC', cls: 'cell-yes' },
+    nanobot: { text: '~4000 LoC', cls: 'cell-yes' },
+    picoclaw: { text: 'Small', cls: 'cell-yes' },
+    ironclaw: { text: '<4000 LoC', cls: 'cell-yes' },
+    tinyclaw: { text: 'Medium', cls: 'cell-special' },
+    agentzero: { text: 'Large', cls: 'cell-special' },
+  },
+  {
+    feature: 'License',
+    openclaw: { text: 'Open Source', cls: 'cell-yes' },
+    zeroclaw: { text: 'Open Source', cls: 'cell-yes' },
+    nanoclaw: { text: 'Open Source', cls: 'cell-yes' },
+    nanobot: { text: 'Open Source', cls: 'cell-yes' },
+    picoclaw: { text: 'Open Source', cls: 'cell-yes' },
+    ironclaw: { text: 'Open Source', cls: 'cell-yes' },
+    tinyclaw: { text: 'Open Source', cls: 'cell-yes' },
+    agentzero: { text: 'Open Source', cls: 'cell-yes' },
+  },
+  {
+    feature: 'First Release',
+    openclaw: { text: '2024', cls: 'cell-special' },
+    zeroclaw: { text: '2025', cls: 'cell-special' },
+    nanoclaw: { text: '2025', cls: 'cell-special' },
+    nanobot: { text: '2025', cls: 'cell-special' },
+    picoclaw: { text: '2025', cls: 'cell-special' },
+    ironclaw: { text: '2025', cls: 'cell-special' },
+    tinyclaw: { text: '2025', cls: 'cell-special' },
+    agentzero: { text: '2024', cls: 'cell-special' },
+  },
+  { category: 'Runtime & Deployment' },
+  {
+    feature: 'Runtime',
+    openclaw: { text: 'Node.js', cls: 'cell-special' },
+    zeroclaw: { text: 'Native Binary', cls: 'cell-special' },
+    nanoclaw: { text: 'Node + Container', cls: 'cell-special' },
+    nanobot: { text: 'Python', cls: 'cell-special' },
+    picoclaw: { text: 'Static Binary', cls: 'cell-special' },
+    ironclaw: { text: 'Rust + Python', cls: 'cell-special' },
+    tinyclaw: { text: 'Node.js', cls: 'cell-special' },
+    agentzero: { text: 'Python + Docker', cls: 'cell-special' },
+  },
+  {
+    feature: 'Docker Support',
+    openclaw: { text: 'Yes', cls: 'cell-yes' },
+    zeroclaw: { text: 'Yes', cls: 'cell-yes' },
+    nanoclaw: { text: 'Native', cls: 'cell-primary' },
+    nanobot: { text: 'Yes', cls: 'cell-yes' },
+    picoclaw: { text: 'Optional', cls: 'cell-partial' },
+    ironclaw: { text: 'Native', cls: 'cell-primary' },
+    tinyclaw: { text: 'Yes', cls: 'cell-yes' },
+    agentzero: { text: 'Native', cls: 'cell-primary' },
+  },
+  {
+    feature: 'Target Platform',
+    openclaw: { text: 'Desktop/Server', cls: 'cell-special' },
+    zeroclaw: { text: 'Any (incl. RPi)', cls: 'cell-special' },
+    nanoclaw: { text: 'Desktop/Server', cls: 'cell-special' },
+    nanobot: { text: 'Desktop/Server', cls: 'cell-special' },
+    picoclaw: { text: 'Embedded/$10 HW', cls: 'cell-special' },
+    ironclaw: { text: 'Desktop/Server', cls: 'cell-special' },
+    tinyclaw: { text: 'Desktop/Server', cls: 'cell-special' },
+    agentzero: { text: 'Desktop/Server', cls: 'cell-special' },
+  },
   { category: 'Messaging Channels' },
   {
     feature: 'WhatsApp',
@@ -186,7 +253,7 @@ const featureMatrix = [
   },
   {
     feature: 'Web UI',
-    openclaw: { text: '—', cls: 'cell-no' },
+    openclaw: { text: 'Yes', cls: 'cell-yes' },
     zeroclaw: { text: '—', cls: 'cell-no' },
     nanoclaw: { text: '—', cls: 'cell-no' },
     nanobot: { text: '—', cls: 'cell-no' },
@@ -250,6 +317,62 @@ const featureMatrix = [
     ironclaw: { text: '—', cls: 'cell-no' },
     tinyclaw: { text: '—', cls: 'cell-no' },
     agentzero: { text: '—', cls: 'cell-no' },
+  },
+  { category: 'AI Provider Support' },
+  {
+    feature: 'OpenAI / GPT',
+    openclaw: { text: 'Yes', cls: 'cell-yes' },
+    zeroclaw: { text: 'Yes', cls: 'cell-yes' },
+    nanoclaw: { text: 'Via Config', cls: 'cell-partial' },
+    nanobot: { text: 'Yes', cls: 'cell-yes' },
+    picoclaw: { text: 'Yes', cls: 'cell-yes' },
+    ironclaw: { text: 'Yes', cls: 'cell-yes' },
+    tinyclaw: { text: 'Yes', cls: 'cell-yes' },
+    agentzero: { text: 'Yes', cls: 'cell-yes' },
+  },
+  {
+    feature: 'Claude / Anthropic',
+    openclaw: { text: 'Yes', cls: 'cell-yes' },
+    zeroclaw: { text: 'Yes', cls: 'cell-yes' },
+    nanoclaw: { text: 'Primary', cls: 'cell-primary' },
+    nanobot: { text: 'Yes', cls: 'cell-yes' },
+    picoclaw: { text: 'Yes', cls: 'cell-yes' },
+    ironclaw: { text: 'Yes', cls: 'cell-yes' },
+    tinyclaw: { text: 'Yes', cls: 'cell-yes' },
+    agentzero: { text: 'Yes', cls: 'cell-yes' },
+  },
+  {
+    feature: 'Gemini / Google',
+    openclaw: { text: 'Yes', cls: 'cell-yes' },
+    zeroclaw: { text: 'Yes', cls: 'cell-yes' },
+    nanoclaw: { text: 'Via Config', cls: 'cell-partial' },
+    nanobot: { text: 'Yes', cls: 'cell-yes' },
+    picoclaw: { text: 'Yes', cls: 'cell-yes' },
+    ironclaw: { text: 'Yes', cls: 'cell-yes' },
+    tinyclaw: { text: 'Yes', cls: 'cell-yes' },
+    agentzero: { text: 'Yes', cls: 'cell-yes' },
+  },
+  {
+    feature: 'Local Models (Ollama)',
+    openclaw: { text: 'Yes', cls: 'cell-yes' },
+    zeroclaw: { text: 'Yes', cls: 'cell-yes' },
+    nanoclaw: { text: 'Via Config', cls: 'cell-partial' },
+    nanobot: { text: 'Yes', cls: 'cell-yes' },
+    picoclaw: { text: 'Yes', cls: 'cell-yes' },
+    ironclaw: { text: 'Yes', cls: 'cell-yes' },
+    tinyclaw: { text: 'Yes', cls: 'cell-yes' },
+    agentzero: { text: 'Yes', cls: 'cell-yes' },
+  },
+  {
+    feature: 'DeepSeek',
+    openclaw: { text: 'Yes', cls: 'cell-yes' },
+    zeroclaw: { text: 'Yes', cls: 'cell-yes' },
+    nanoclaw: { text: '—', cls: 'cell-no' },
+    nanobot: { text: 'Yes', cls: 'cell-yes' },
+    picoclaw: { text: '—', cls: 'cell-no' },
+    ironclaw: { text: 'Yes', cls: 'cell-yes' },
+    tinyclaw: { text: 'Yes', cls: 'cell-yes' },
+    agentzero: { text: 'Yes', cls: 'cell-yes' },
   },
   { category: 'Tools & Integrations' },
   {
@@ -411,81 +534,7 @@ const featureMatrix = [
   },
 ];
 
-// ===== SPECS DATA =====
-const specsData = [
-  { category: 'General' },
-  {
-    feature: 'Primary Language',
-    values: ['TypeScript', 'Rust', 'TypeScript', 'Python', 'Go', 'Rust + Python', 'TS/Bash', 'Python']
-  },
-  {
-    feature: 'Codebase Size',
-    values: ['Large', 'Medium', '~500 LoC', '~4000 LoC', 'Small', '<4000 LoC', 'Medium', 'Large']
-  },
-  {
-    feature: 'License',
-    values: ['Open Source', 'Open Source', 'Open Source', 'Open Source', 'Open Source', 'Open Source', 'Open Source', 'Open Source']
-  },
-  {
-    feature: 'First Release',
-    values: ['2024', '2025', '2025', '2025', '2025', '2025', '2025', '2024']
-  },
-  { category: 'Runtime & Deployment' },
-  {
-    feature: 'Runtime',
-    values: ['Node.js', 'Native Binary', 'Node.js + Container', 'Python', 'Static Binary', 'Rust + Python', 'Node.js', 'Python + Docker']
-  },
-  {
-    feature: 'Docker Support',
-    values: ['Yes', 'Yes', 'Native', 'Yes', 'Optional', 'Native', 'Yes', 'Native']
-  },
-  {
-    feature: 'Target Platform',
-    values: ['Desktop/Server', 'Any (incl. RPi)', 'Desktop/Server', 'Desktop/Server', 'Embedded/$10 HW', 'Desktop/Server', 'Desktop/Server', 'Desktop/Server']
-  },
-  { category: 'AI Provider Support' },
-  {
-    feature: 'OpenAI / GPT',
-    values: ['Yes', 'Yes', 'Via Config', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes']
-  },
-  {
-    feature: 'Claude / Anthropic',
-    values: ['Yes', 'Yes', 'Primary', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes']
-  },
-  {
-    feature: 'Gemini / Google',
-    values: ['Yes', 'Yes', 'Via Config', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes']
-  },
-  {
-    feature: 'Local Models (Ollama)',
-    values: ['Yes', 'Yes', 'Via Config', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes']
-  },
-  {
-    feature: 'DeepSeek',
-    values: ['Yes', 'Yes', '—', 'Yes', '—', 'Yes', 'Yes', 'Yes']
-  },
-  { category: 'Communication' },
-  {
-    feature: 'WhatsApp',
-    values: ['Yes', 'Yes', 'Primary', 'Yes', '—', 'Planned', 'Yes', '—']
-  },
-  {
-    feature: 'Telegram',
-    values: ['Yes', '—', 'Via skill', 'Yes', 'Yes', 'Yes', 'Yes', '—']
-  },
-  {
-    feature: 'Discord',
-    values: ['Yes', '—', '—', 'Via skill', 'Yes', 'Yes', 'Yes', 'Yes']
-  },
-  {
-    feature: 'Slack',
-    values: ['Yes', '—', '—', '—', '—', '—', 'Yes', '—']
-  },
-  {
-    feature: 'Web UI',
-    values: ['—', '—', '—', '—', '—', '—', '—', 'Yes']
-  },
-];
+
 
 // ===== CONCEPTS DATA =====
 const concepts = [
@@ -633,38 +682,14 @@ function renderFeatureTable() {
     return `<tr>
       <td>${row.feature}</td>
       ${agents.map(a => {
-        const cell = row[a.id];
-        return `<td class="${cell.cls}">${cell.text}</td>`;
-      }).join('')}
+      const cell = row[a.id];
+      return `<td class="${cell.cls}">${cell.text}</td>`;
+    }).join('')}
     </tr>`;
   }).join('');
 }
 
-function renderSpecsTable() {
-  const thead = document.getElementById('specs-thead');
-  const tbody = document.getElementById('specs-tbody');
 
-  thead.innerHTML = `<tr>
-    <th>Specification</th>
-    ${agents.map(a => `<th class="${a.thClass}">${a.name}</th>`).join('')}
-  </tr>`;
-
-  tbody.innerHTML = specsData.map(row => {
-    if (row.category) {
-      return `<tr class="category-row"><td colspan="${agents.length + 1}">${row.category}</td></tr>`;
-    }
-    return `<tr>
-      <td>${row.feature}</td>
-      ${row.values.map(v => {
-        let cls = 'cell-special';
-        if (v === '—') cls = 'cell-no';
-        else if (v === 'Yes' || v === 'Native') cls = 'cell-yes';
-        else if (v === 'Planned' || v === 'Via Config' || v === 'Via skill' || v === 'Optional') cls = 'cell-partial';
-        return `<td class="${cls}">${v}</td>`;
-      }).join('')}
-    </tr>`;
-  }).join('');
-}
 
 function renderConcepts() {
   const grid = document.getElementById('concepts-grid');
@@ -737,7 +762,6 @@ function initTabs() {
         overview: 'panel-overview',
         concepts: 'panel-concepts',
         features: 'panel-features',
-        comparison: 'panel-comparison',
         architecture: 'panel-architecture',
         verdicts: 'panel-verdicts',
       }[target];
@@ -772,7 +796,6 @@ function initScrollAnimations() {
 function init() {
   renderAgentGrid();
   renderFeatureTable();
-  renderSpecsTable();
   renderConcepts();
   renderArchitecture();
   renderVerdicts();
